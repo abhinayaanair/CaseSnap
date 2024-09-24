@@ -1,0 +1,87 @@
+.maininv {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  position: relative; /* Important to position child elements */
+}
+
+.leftdiv {
+  width: 30%;
+  font-size: 18px;
+  margin-left: 10vw;
+  margin-top: 10vh;
+}
+
+.heading {
+  font-size: 40px;
+  font-family: serif;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.getinv1, .getinv2, .getinv3 {
+  margin-bottom: 25px;
+  line-height: 25px;
+  font-family: serif;
+}
+
+.rightdiv {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.topimg {
+  position: absolute;
+  width: 14vw;
+  height: 23vh;
+  z-index: 10;
+  top: 15vh;
+  right: 10vw;
+  background: url(../assets/top.jpg);
+  background-size: cover;
+  background-position: center;
+  border: none;
+  box-shadow: 0 0 20px 2px salmon;
+}
+
+.bottomimg {
+  position: absolute;
+  width: 30vw;
+  height: 50vh;
+  background: url(../assets/bottom.jpg);
+  background-size: cover;
+  background-position: center;
+  border: none;
+  box-shadow: 0 0 15px 4px salmon;
+}
+
+/* Glowing effect styles */
+.glow-top-left, .glow-bottom-right {
+  position: absolute;
+  border-radius: 50%;
+  z-index: 5; /* Ensure it appears above most content */
+}
+
+.glow-top-left {
+  top: -50px;
+  left: -50px;
+  width: 200px;
+  height: 200px;
+  background: rgb(255, 163, 153);
+  box-shadow: 0 0 60px 200px rgb(255, 163, 153);
+  opacity: 0.4;
+}
+
+.glow-bottom-right {
+  bottom: -50px;
+  right: -50px;
+  width: 250px;
+  height: 250px;
+  background: rgb(255, 163, 153);
+  box-shadow: 0 0 80px 200px rgb(255, 163, 153);
+  opacity: 0.4;
+}

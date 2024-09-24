@@ -1,0 +1,126 @@
+/* What we do */
+
+.desktop {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+}
+
+.desktop .overlap-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 4;
+}
+
+.desktop .frame, .desktop .frame-2, .desktop .frame-3 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.desktop .frame {
+  background-color: #eaeae8;
+  padding: 40px;
+  box-sizing: border-box;
+  z-index:3;
+}
+
+.desktop .text-wrapper {
+  color: #444444;
+  font-family: "Playfair Display-Bold", Helvetica;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+}
+
+.desktop .div {
+  color: #444444;
+  font-family: "Montserrat-Regular", Helvetica;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  margin: 20px 0; /* Add some spacing between text and button */
+  width: 50%; /* Adjust width to make text responsive */
+  
+}
+
+.desktop .objectives-functions {
+  display: flex;
+  flex-direction: column;
+  background-color: #dfdfdf;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.desktop .frame-2 {
+  background-color: #dfdfdf;
+  z-index:3;
+}
+
+.desktop .frame-3 {
+  background-color: #fcd6d3;
+  
+  padding: 40px;
+  box-sizing: border-box;
+  width:40vw;
+  margin:10vh 0;
+  margin-left: 30vw;
+  height:30vh;
+  z-index:3;
+ 
+}
+
+.desktop .div-wrapper {
+  border: 1px solid #ee3123;
+  background-color: #fcd6d3;
+  display: inline-flex;
+  gap: 8px;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 24px;
+  margin-top: 20px;
+}
+
+.desktop .text-wrapper-3 {
+  color: #444444;
+  font-family: "Montserrat-SemiBold", Helvetica;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+.desktop .frame, .desktop .frame-2, .desktop .frame-3 {
+  height:25vh
+}
+
+.glow-left {
+  top: 40vh;
+  left: -50px;
+  width: 10vw;
+  height: 20vh;
+  background: rgb(255, 163, 153);
+  box-shadow: 0 0 60px 200px rgb(255, 163, 153);
+  opacity: 0.4;
+ 
+  position: absolute;
+}
+
+.glow-right {
+  top: 40vh;
+  right: -50px;
+  width: 10vw;
+  height: 20vh;
+  background: rgb(255, 163, 153);
+  box-shadow: 0 0 80px 200px rgb(255, 163, 153);
+  opacity: 0.4;
+  
+  position: absolute;
+}

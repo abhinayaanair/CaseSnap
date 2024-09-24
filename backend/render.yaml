@@ -1,0 +1,20 @@
+version: 1
+services:
+  - type: web
+    name: casesnap-ai
+    env: python
+    plan: free
+    buildCommand: |
+      pip install -r requirements.txt
+      python -m spacy download en_core_web_sm
+    startCommand: python app.py
+    envVars:
+      - key: CLOUD_NAME
+        value: dlv8etgkl
+      - key: CLOUD_API_KEY
+        value: 958695759171152
+      - key: CLOUD_API_SECRET
+        value: Z1ySvHVQkJvl_RXGB6qD45qejlY
+      - key: MONGO_URI
+        value: mongodb+srv://abhinayanair:2rSQQNNGj37OwVML@cluster0.t5tw7sl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+    region: oregon
